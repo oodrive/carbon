@@ -1,0 +1,20 @@
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+    prefer_single_quotes: true # I don't like when things are mixed
+    sort_pub_dependencies: false # I like to group them how I want to
+    avoid_dynamic_calls: true # Safer in some cases
+    sort_constructors_first: true # At least we all do the same thing
+
+analyzer:
+  strong-mode:
+    implicit-dynamic: false
+  exclude:
+    - build/**
+    - lib/generated_plugin_registrant.dart
+    - "**/gen/**"
+    - "**/*.g.dart"
+    - "**/*.gen.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"

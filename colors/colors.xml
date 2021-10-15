@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkGreen">#005962</color>
+    <color name="mediumGreen">#18956B</color>
+    <color name="lightGreen">#3ab39b</color>
+    <color name="paleGreen">#e0f3ef</color>
+
+    <color name="scope1Color">#1DE9B6</color>
+    <color name="scope2Color">#64B5F6</color>
+    <color name="scope3Color">#FFCC80</color>
+    <color name="scope1DarkColor">#1DE9B6</color>
+    <color name="scope2DarkColor">#40C4FF</color>
+    <color name="scope3DarkColor">#FFCC80</color>
+</resources>
