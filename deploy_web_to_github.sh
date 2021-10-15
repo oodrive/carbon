@@ -3,4 +3,5 @@
 flutter clean
 flutter pub get
 flutter build web --release
-cp -r ./build/web ./deploy_web
+rm -r ./docs
+cp -r ./build/web ./docs
