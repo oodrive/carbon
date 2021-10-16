@@ -305,7 +305,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "heatGenerationTitle":
             MessageLookupByLibrary.simpleMessage("Génération de chaleur"),
         "homeworkingDesc": MessageLookupByLibrary.simpleMessage(
-            "Lorsque des employés télétravaillent, ils consomment de l\'énergie (pour le fonctionnement de leur poste de travail, le chauffage, la climatisation) qui peut être comptabilisée dans le bilan carbone de l\'organisation.\n\nCertaines études montrent qu\'un télétravailleur à temps-plein (5 jours par semaine) consomme en moyenne au moins 50 kWh de plus par mois, il est donc possible de ramener ce ratio au nombre d\'employé et de jours en télétravail."),
+            "Lorsque des employés télétravaillent, ils consomment de l\'énergie (pour le fonctionnement de leur poste de travail, le chauffage, la climatisation) qui peut être comptabilisée dans le bilan carbone de l\'organisation.\n\nCertaines études montrent qu\'un télétravailleur à temps-plein (5 jours par semaine) consomme en moyenne [au moins 50 kWh](https://wikipower.be/blog/facture-energie-en-teletravail/) de plus par mois, il est donc possible de ramener ce ratio au nombre d\'employé et de jours en télétravail."),
         "homeworkingTitle": MessageLookupByLibrary.simpleMessage("Télétravail"),
         "householdWaste":
             MessageLookupByLibrary.simpleMessage("Ordures ménagères"),
