@@ -250,7 +250,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Electricité utilisée par les datacenters de l\'organisation, qui ne sont pas hébergés dans les locaux de l\'organisation (auquel cas cette électricité ferait partie du scope 2).\n\nSi la consommation annuelle de ces machines est difficile à obtenir, recenser les équipements présents dans ces datacenters, calculer leur puissance et multiplier par le coefficient PUE (Power Usage Efficiency) du datacenter afin d\'avoir une évaluation de la puissance totale des équipements. L\'énergie annuelle consommée s\'obtient ensuite en multipliant cette puissance moyenne par 24h puis par 365 jours."),
         "dataCenterTitle": MessageLookupByLibrary.simpleMessage("Data centers"),
         "dataConfidentialityDescription": MessageLookupByLibrary.simpleMessage(
-            "Toutes les données que vous rentrez sont traitées sur votre poste et rien n\'est envoyé, vos données restent donc parfaitement confidentielles. Cela veut également dire qu\'il vous faut récupérer et sauvegarder vos données via la fonction d\'export si vous souhaitez changer d\'ordinateur ou partager les données.\n\nComme cet outil est complètement ouvert, vous pouvez vérifier son comportement en regardant son code-source [ici](https://github.com/oodrive/carbon)."),
+            "Toutes les données que vous rentrez sont traitées sur votre poste et rien n\'est envoyé par le réseau, vos données restent donc parfaitement confidentielles. Cela veut également dire qu\'il vous faut récupérer et sauvegarder vos données via la fonction d\'export si vous souhaitez changer d\'ordinateur ou partager les données.\n\nComme cet outil est complètement ouvert, vous pouvez vérifier son comportement en regardant son code-source [ici](https://github.com/oodrive/carbon)."),
         "dataConfidentialityTitle": MessageLookupByLibrary.simpleMessage(
             "Est-ce que mes données sont sécurisés ?"),
         "deleteOrganization": MessageLookupByLibrary.simpleMessage(
@@ -305,7 +305,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "heatGenerationTitle":
             MessageLookupByLibrary.simpleMessage("Génération de chaleur"),
         "homeworkingDesc": MessageLookupByLibrary.simpleMessage(
-            "Lorsque des employés télétravaillent, ils consomment de l\'énergie (pour le fonctionnement de leur poste de travail, le chauffage, la climatisation) qui peut être comptabilisée dans le bilan carbone de l\'organisation. Une estimation moyenne de la consommation électrique de chaque poste de travail peut être utilisée."),
+            "Lorsque des employés télétravaillent, ils consomment de l\'énergie (pour le fonctionnement de leur poste de travail, le chauffage, la climatisation) qui peut être comptabilisée dans le bilan carbone de l\'organisation.\n\nCertaines études montrent qu\'un télétravailleur à temps-plein (5 jours par semaine) consomme en moyenne au moins 50 kWh de plus par mois, il est donc possible de ramener ce ratio au nombre d\'employé et de jours en télétravail."),
         "homeworkingTitle": MessageLookupByLibrary.simpleMessage("Télétravail"),
         "householdWaste":
             MessageLookupByLibrary.simpleMessage("Ordures ménagères"),

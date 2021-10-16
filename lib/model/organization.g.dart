@@ -283,16 +283,14 @@ class EmissionAdapter extends TypeAdapter<Emission> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-Organization _$OrganizationFromJson(Map<String, dynamic> json) {
-  return Organization(
-    name: json['name'] as String,
-    year: json['year'] as int,
-  )
-    ..id = json['id'] as String
-    ..sites = (json['sites'] as List<dynamic>)
-        .map((e) => Site.fromJson(e as Map<String, dynamic>))
-        .toList();
-}
+Organization _$OrganizationFromJson(Map<String, dynamic> json) => Organization(
+      name: json['name'] as String? ?? '',
+      year: json['year'] as int? ?? 0,
+    )
+      ..id = json['id'] as String
+      ..sites = (json['sites'] as List<dynamic>)
+          .map((e) => Site.fromJson(e as Map<String, dynamic>))
+          .toList();
 
 Map<String, dynamic> _$OrganizationToJson(Organization instance) =>
     <String, dynamic>{
@@ -302,15 +300,13 @@ Map<String, dynamic> _$OrganizationToJson(Organization instance) =>
       'sites': instance.sites,
     };
 
-Site _$SiteFromJson(Map<String, dynamic> json) {
-  return Site(
-    name: json['name'] as String,
-  )
-    ..id = json['id'] as String
-    ..scope1 = Scope1.fromJson(json['scope1'] as Map<String, dynamic>)
-    ..scope2 = Scope2.fromJson(json['scope2'] as Map<String, dynamic>)
-    ..scope3 = Scope3.fromJson(json['scope3'] as Map<String, dynamic>);
-}
+Site _$SiteFromJson(Map<String, dynamic> json) => Site(
+      name: json['name'] as String? ?? '',
+    )
+      ..id = json['id'] as String
+      ..scope1 = Scope1.fromJson(json['scope1'] as Map<String, dynamic>)
+      ..scope2 = Scope2.fromJson(json['scope2'] as Map<String, dynamic>)
+      ..scope3 = Scope3.fromJson(json['scope3'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$SiteToJson(Site instance) => <String, dynamic>{
       'id': instance.id,
@@ -320,25 +316,23 @@ Map<String, dynamic> _$SiteToJson(Site instance) => <String, dynamic>{
       'scope3': instance.scope3,
     };
 
-Scope1 _$Scope1FromJson(Map<String, dynamic> json) {
-  return Scope1()
-    ..heatGeneration = (json['heatGeneration'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..electricityProduction = (json['electricityProduction'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..ownedTransport = (json['ownedTransport'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        [];
-}
+Scope1 _$Scope1FromJson(Map<String, dynamic> json) => Scope1()
+  ..heatGeneration = (json['heatGeneration'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..electricityProduction = (json['electricityProduction'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..ownedTransport = (json['ownedTransport'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      [];
 
 Map<String, dynamic> _$Scope1ToJson(Scope1 instance) => <String, dynamic>{
       'heatGeneration': instance.heatGeneration,
@@ -347,67 +341,63 @@ Map<String, dynamic> _$Scope1ToJson(Scope1 instance) => <String, dynamic>{
       'otherEmissions': instance.otherEmissions,
     };
 
-Scope2 _$Scope2FromJson(Map<String, dynamic> json) {
-  return Scope2()
-    ..electricityPurchase = (json['electricityPurchase'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        [];
-}
+Scope2 _$Scope2FromJson(Map<String, dynamic> json) => Scope2()
+  ..electricityPurchase = (json['electricityPurchase'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      [];
 
 Map<String, dynamic> _$Scope2ToJson(Scope2 instance) => <String, dynamic>{
       'electricityPurchase': instance.electricityPurchase,
       'otherEmissions': instance.otherEmissions,
     };
 
-Scope3 _$Scope3FromJson(Map<String, dynamic> json) {
-  return Scope3()
-    ..businessTravel = (json['businessTravel'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..employeeCommuting = (json['employeeCommuting'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..homeworkingEmissions = (json['homeworkingEmissions'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..dataCenter = (json['dataCenter'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..services = (json['services'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..goods = (json['goods'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..capitalGoods = (json['capitalGoods'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..waste = (json['waste'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        []
-    ..productElectricityUsage =
-        (json['productElectricityUsage'] as List<dynamic>?)
-                ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-                .toList() ??
-            []
-    ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
-            ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
-            .toList() ??
-        [];
-}
+Scope3 _$Scope3FromJson(Map<String, dynamic> json) => Scope3()
+  ..businessTravel = (json['businessTravel'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..employeeCommuting = (json['employeeCommuting'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..homeworkingEmissions = (json['homeworkingEmissions'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..dataCenter = (json['dataCenter'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..services = (json['services'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..goods = (json['goods'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..capitalGoods = (json['capitalGoods'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..waste = (json['waste'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      []
+  ..productElectricityUsage =
+      (json['productElectricityUsage'] as List<dynamic>?)
+              ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          []
+  ..otherEmissions = (json['otherEmissions'] as List<dynamic>?)
+          ?.map((e) => Emission.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      [];
 
 Map<String, dynamic> _$Scope3ToJson(Scope3 instance) => <String, dynamic>{
       'businessTravel': instance.businessTravel,
@@ -422,16 +412,14 @@ Map<String, dynamic> _$Scope3ToJson(Scope3 instance) => <String, dynamic>{
       'otherEmissions': instance.otherEmissions,
     };
 
-Emission _$EmissionFromJson(Map<String, dynamic> json) {
-  return Emission(
-    type: json['type'] as String,
-  )
-    ..quantity = (json['quantity'] as num).toDouble()
-    ..amortizationPeriod = json['amortizationPeriod'] as int? ?? 1
-    ..adjustmentCoefficient =
-        (json['adjustmentCoefficient'] as num?)?.toDouble() ?? 1
-    ..note = json['note'] as String? ?? '';
-}
+Emission _$EmissionFromJson(Map<String, dynamic> json) => Emission(
+      type: json['type'] as String? ?? '',
+    )
+      ..quantity = (json['quantity'] as num).toDouble()
+      ..amortizationPeriod = json['amortizationPeriod'] as int? ?? 1
+      ..adjustmentCoefficient =
+          (json['adjustmentCoefficient'] as num?)?.toDouble() ?? 1
+      ..note = json['note'] as String? ?? '';
 
 Map<String, dynamic> _$EmissionToJson(Emission instance) => <String, dynamic>{
       'type': instance.type,
@@ -441,13 +429,12 @@ Map<String, dynamic> _$EmissionToJson(Emission instance) => <String, dynamic>{
       'note': instance.note,
     };
 
-OrganizationList _$OrganizationListFromJson(Map<String, dynamic> json) {
-  return OrganizationList(
-    (json['organizations'] as List<dynamic>)
-        .map((e) => Organization.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+OrganizationList _$OrganizationListFromJson(Map<String, dynamic> json) =>
+    OrganizationList(
+      (json['organizations'] as List<dynamic>)
+          .map((e) => Organization.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
 Map<String, dynamic> _$OrganizationListToJson(OrganizationList instance) =>
     <String, dynamic>{
