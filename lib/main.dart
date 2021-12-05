@@ -47,12 +47,12 @@ class MyApp extends StatelessWidget {
   final Box<Organization> _box;
 
   final _beamerDelegate = BeamerDelegate(
-    locationBuilder: SimpleLocationBuilder(
-      routes: <String, BeamPage Function(BuildContext, BeamState)>{
-        '/': (context, state) => const BeamPage(title: _appName, child: HomeScreen()),
-        '/:organizationId': (context, state) => const BeamPage(title: _appName, child: OrganizationScreen()),
-        '/:organizationId/:siteId': (context, state) => const BeamPage(title: _appName, child: SiteScreen()),
-        '/:organizationId/:siteId/:scopeId': (context, state) => const BeamPage(title: _appName, child: ScopeScreen()),
+    locationBuilder: RoutesLocationBuilder(
+      routes: {
+        '/': (context, state, data) => const BeamPage(title: _appName, child: HomeScreen()),
+        '/:organizationId': (context, state, data) => const BeamPage(title: _appName, child: OrganizationScreen()),
+        '/:organizationId/:siteId': (context, state, data) => const BeamPage(title: _appName, child: SiteScreen()),
+        '/:organizationId/:siteId/:scopeId': (context, state, data) => const BeamPage(title: _appName, child: ScopeScreen()),
       },
     ),
   );
