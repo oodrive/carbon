@@ -1,6 +1,5 @@
 import 'package:carbon/gen/colors.gen.dart';
 import 'package:carbon/translations/gen/l10n.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

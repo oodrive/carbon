@@ -4,7 +4,6 @@ import 'package:carbon/model/criteria.dart';
 import 'package:carbon/model/organization.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

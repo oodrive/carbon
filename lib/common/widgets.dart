@@ -7,7 +7,6 @@ import 'package:carbon/translations/gen/l10n.dart';
 import 'package:diffutil_dart/diffutil.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:gap/gap.dart';
 import 'package:url_launcher/url_launcher.dart';
