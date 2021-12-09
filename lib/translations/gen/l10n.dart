@@ -160,6 +160,26 @@ class Translation {
     );
   }
 
+  /// `A qui s'addresse cet outil ?`
+  String get whoIsConcernedTitle {
+    return Intl.message(
+      'A qui s\'addresse cet outil ?',
+      name: 'whoIsConcernedTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cet outil, relativement simple, s'adresse principalement aux PME françaises qui cherchent à faire une première estimation de leur bilan carbone, à se familiariser avec les procédés de calcul et à comprendre les enjeux de la transition écologique.\n\nCependant, tous les domaines d'activité ne sont pas couverts. Quant aux grosses sociétés, il est certainement préférable pour elles de déléguer cette analyse à un organisme spécialisé.`
+  String get whoIsConcernedDescription {
+    return Intl.message(
+      'Cet outil, relativement simple, s\'adresse principalement aux PME françaises qui cherchent à faire une première estimation de leur bilan carbone, à se familiariser avec les procédés de calcul et à comprendre les enjeux de la transition écologique.\n\nCependant, tous les domaines d\'activité ne sont pas couverts. Quant aux grosses sociétés, il est certainement préférable pour elles de déléguer cette analyse à un organisme spécialisé.',
+      name: 'whoIsConcernedDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Pourquoi réduire ses émissions de gaz à effet de serre (GES) ?`
   String get whyReduceFootprintTitle {
     return Intl.message(
@@ -305,6 +325,26 @@ class Translation {
     return Intl.message(
       'Cette estimation n\'a pas pour vocation de remplacer une réelle certification par un organisme extérieur, il est en effet facile d\'oublier ou de minimiser des émissions.\n\nNous vous recommandons donc d\'utiliser cet outil à des fins d\'analyse et non à des fins de communication.',
       name: 'estimationCommunicationDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sources`
+  String get sourcesTitle {
+    return Intl.message(
+      'Sources',
+      name: 'sourcesTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Les facteurs d'emissions proviennent presque exclusivement de la [Base Carbone ®](https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/presentation/siGras/0). Il s'agit d'une base de données publiques de facteurs d'émissions réalisée par l'[ADEME](https://www.ademe.fr) — l'Agence de la transition écologique — un organisme publique français.`
+  String get sourcesDescription {
+    return Intl.message(
+      'Les facteurs d\'emissions proviennent presque exclusivement de la [Base Carbone ®](https://www.bilans-ges.ademe.fr/fr/accueil/contenu/index/page/presentation/siGras/0). Il s\'agit d\'une base de données publiques de facteurs d\'émissions réalisée par l\'[ADEME](https://www.ademe.fr) — l\'Agence de la transition écologique — un organisme publique français.',
+      name: 'sourcesDescription',
       desc: '',
       args: [],
     );

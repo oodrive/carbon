@@ -70,6 +70,13 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
+                      Translation.current.whoIsConcernedTitle,
+                      style: context.textTheme.headline5?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    const Gap(16),
+                    AutoLinkMarkdown(data: Translation.current.whoIsConcernedDescription),
+                    const Gap(48),
+                    Text(
                       Translation.current.whyReduceFootprintTitle,
                       style: context.textTheme.headline5?.copyWith(fontWeight: FontWeight.bold),
                     ),

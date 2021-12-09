@@ -98,6 +98,13 @@ class OrganizationScreen extends StatelessWidget {
                     AutoLinkMarkdown(data: Translation.current.estimationCommunicationDescription),
                     const Gap(48),
                     Text(
+                      Translation.current.sourcesTitle,
+                      style: context.textTheme.headline5?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                    const Gap(16),
+                    AutoLinkMarkdown(data: Translation.current.sourcesDescription),
+                    const Gap(48),
+                    Text(
                       Translation.current.compensationTitle,
                       style: context.textTheme.headline5?.copyWith(fontWeight: FontWeight.bold),
                     ),
