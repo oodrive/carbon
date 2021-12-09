@@ -2970,21 +2970,21 @@ class Translation {
     );
   }
 
-  /// `Métaux`
-  String get metalWaste {
+  /// `Bouteilles en plastique PET`
+  String get plasticPETBottleWaste {
     return Intl.message(
-      'Métaux',
-      name: 'metalWaste',
+      'Bouteilles en plastique PET',
+      name: 'plasticPETBottleWaste',
       desc: '',
       args: [],
     );
   }
 
-  /// `Plastiques`
-  String get plasticWaste {
+  /// `Autres plastiques`
+  String get otherPlasticWaste {
     return Intl.message(
-      'Plastiques',
-      name: 'plasticWaste',
+      'Autres plastiques',
+      name: 'otherPlasticWaste',
       desc: '',
       args: [],
     );
@@ -3000,11 +3000,21 @@ class Translation {
     );
   }
 
-  /// `Eaux usées`
-  String get waterWaste {
+  /// `Béton, briques, tuiles et céramiques`
+  String get concreteWaste {
     return Intl.message(
-      'Eaux usées',
-      name: 'waterWaste',
+      'Béton, briques, tuiles et céramiques',
+      name: 'concreteWaste',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Déchets de construction non dangereux en mélange (DIB)`
+  String get otherMixedConstructionWaste {
+    return Intl.message(
+      'Déchets de construction non dangereux en mélange (DIB)',
+      name: 'otherMixedConstructionWaste',
       desc: '',
       args: [],
     );
@@ -3115,16 +3125,6 @@ class Translation {
     return Intl.message(
       'm²',
       name: 'unitSquareMeter',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `m3`
-  String get unitCubicMeter {
-    return Intl.message(
-      'm3',
-      name: 'unitCubicMeter',
       desc: '',
       args: [],
     );

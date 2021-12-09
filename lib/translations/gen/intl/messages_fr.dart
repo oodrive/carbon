@@ -64,6 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Neutralité carbone"),
         "computerProducts": MessageLookupByLibrary.simpleMessage(
             "Produits informatiques, électroniques et optiques"),
+        "concreteWaste": MessageLookupByLibrary.simpleMessage(
+            "Béton, briques, tuiles et céramiques"),
         "countryAlbania": MessageLookupByLibrary.simpleMessage("Albanie"),
         "countryAlgeria": MessageLookupByLibrary.simpleMessage("Algérie"),
         "countryAngola": MessageLookupByLibrary.simpleMessage("Angola"),
@@ -324,7 +326,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Avion moyen courrier"),
         "metalProducts": MessageLookupByLibrary.simpleMessage(
             "Produits métalliques, sauf machines et équipements"),
-        "metalWaste": MessageLookupByLibrary.simpleMessage("Métaux"),
         "metals": MessageLookupByLibrary.simpleMessage(
             "Métaux (aluminium, cuivre, acier, etc.)"),
         "mineralProducts": MessageLookupByLibrary.simpleMessage(
@@ -353,6 +354,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "otherCriteriaTitle": MessageLookupByLibrary.simpleMessage("Autre"),
         "otherEmissions":
             MessageLookupByLibrary.simpleMessage("Autres sources d\'émissions"),
+        "otherMixedConstructionWaste": MessageLookupByLibrary.simpleMessage(
+            "Déchets de construction non dangereux en mélange (DIB)"),
+        "otherPlasticWaste":
+            MessageLookupByLibrary.simpleMessage("Autres plastiques"),
         "ownedTransportAdvice": MessageLookupByLibrary.simpleMessage(
             "Pour réduire les émissions de CO₂ liées à la flotte de véhicules de l\'organisation :\n- Moins utiliser les véhicules en question et privilégier les transports en commun.\n- Utiliser des [voitures électriques](http://www.carbone4.com/wp-content/uploads/2020/12/Motorisations-Alternatives-Executive-Summary-VP-1-1.pdf) de petite taille."),
         "ownedTransportDesc": MessageLookupByLibrary.simpleMessage(
@@ -367,7 +372,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "photocopiers": MessageLookupByLibrary.simpleMessage("Photocopieurs"),
         "plastic":
             MessageLookupByLibrary.simpleMessage("Plastiques et caoutchouc"),
-        "plasticWaste": MessageLookupByLibrary.simpleMessage("Plastiques"),
+        "plasticPETBottleWaste":
+            MessageLookupByLibrary.simpleMessage("Bouteilles en plastique PET"),
         "premiumLongHaulPlane": MessageLookupByLibrary.simpleMessage(
             "Avion long courrier - Première classe"),
         "printer": MessageLookupByLibrary.simpleMessage("Imprimante"),
@@ -464,7 +470,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Matériel de transport"),
         "tv": MessageLookupByLibrary.simpleMessage("Télévision"),
         "unit": MessageLookupByLibrary.simpleMessage("unités"),
-        "unitCubicMeter": MessageLookupByLibrary.simpleMessage("m3"),
         "unitEmployees": MessageLookupByLibrary.simpleMessage("personnes"),
         "unitEur": MessageLookupByLibrary.simpleMessage("€"),
         "unitKWh": MessageLookupByLibrary.simpleMessage("KWh (PCI)"),
@@ -482,7 +487,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "wasteDesc": MessageLookupByLibrary.simpleMessage(
             "Le nombre de tonnes de déchets produites par l\'organisation au cours de l\'année."),
         "wasteTitle": MessageLookupByLibrary.simpleMessage("Déchets"),
-        "waterWaste": MessageLookupByLibrary.simpleMessage("Eaux usées"),
         "whyReduceFootprintDescription": MessageLookupByLibrary.simpleMessage(
             "Nous avons déjà gagné **+1°C** (en moyenne) par rapport aux niveaux préindustriels, avec une augmentation déjà visible du nombre de vagues de chaleur, de sécheresses, d\'incendies ou de cyclones. Malgré ce que disent certains climatosceptiques, les scientifiques [sont sûrs à plus de 95%](https://climate.nasa.gov/evidence/) que cela est dû aux émissions de GES provenant des activités humaines (CO₂, CH₄, N₂O). La nature ne peut absorber une telle quantité de GES et, comme si cela ne suffisait pas, nous ne cessons d’en ajouter chaque année davantage dans l’atmosphère.\n- En atteignant **+2°C** d\'ici 2100, [nous subirons certainement](https://www.wwf.org.uk/updates/our-warming-world-how-much-difference-will-half-degree-really-make) une perte majeure de notre biodiversité (-18% d\'insectes, -16% de plantes, -8% de vertébrés, -99% des coraux), 49 millions de personnes devraient être touchées par la hausse du niveau de la mer et 410 millions de personnes risque de souffrir de grave sécheresses, conduisant certainement à une émigration massive et à des instabilités financières et politiques.\n- À **+4°C** les humains ne pourront plus vivre autour de l\'équateur [en raison de chaleurs mortelles](http://www.uhm.hawaii.edu/news/article.php?aId=8657), des milliards de personnes vont émigrer dans d\'autres régions et entraineront un risque très élevé de famines ou de guerres, avec des millions ou milliards de morts potentiels.\n\n  ![](resource:assets/dead_zones_4deg.webp)\n- **+6°C** est la même différence de température moyenne entre le dernier **âge de glace** et le **20e siècle**, les conséquences seraient inimaginables."),
         "whyReduceFootprintTitle": MessageLookupByLibrary.simpleMessage(

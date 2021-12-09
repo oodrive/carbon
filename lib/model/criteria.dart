@@ -746,8 +746,6 @@ class CapitalGoodsCriteria extends Criteria {
 
 class WasteCriteria extends Criteria {
   static final instance = WasteCriteria();
-  static const glassWasteKey = 'glassWaste';
-  static const metalWasteKey = 'metalWaste';
 
   @override
   String getTitle(BuildContext context) => Translation.current.wasteTitle;
@@ -760,35 +758,35 @@ class WasteCriteria extends Criteria {
 
   @override
   Map<String, String> typeLabels(BuildContext context) => {
-        paperWasteKey: Translation.current.paperWaste,
         cardboardWasteKey: Translation.current.cardboardWaste,
         glassWasteKey: Translation.current.glassWaste,
-        metalWasteKey: Translation.current.metalWaste,
-        plasticWasteKey: Translation.current.plasticWaste,
+        plasticPETBottleWasteKey: Translation.current.plasticPETBottleWaste,
+        otherPlasticWasteKey: Translation.current.otherPlasticWaste,
         householdWasteKey: Translation.current.householdWaste,
-        waterWasteKey: Translation.current.waterWaste,
-      }; //TODO add construction waste
+        concreteWasteKey: Translation.current.concreteWaste,
+        otherMixedConstructionWasteKey: Translation.current.otherMixedConstructionWaste,
+      };
 
   @override
   Map<String, Co2Factor> typeCo2Factors() => {
-        paperWasteKey: paperWaste,
         cardboardWasteKey: cardboardWaste,
-        glassWasteKey: mineralsWaste,
-        metalWasteKey: mineralsWaste,
-        plasticWasteKey: plasticWaste,
+        glassWasteKey: glassWaste,
+        plasticPETBottleWasteKey: plasticPETBottleWaste,
+        otherPlasticWasteKey: otherPlasticWaste,
         householdWasteKey: householdWaste,
-        waterWasteKey: waterWaste,
+        concreteWasteKey: concreteWaste,
+        otherMixedConstructionWasteKey: otherMixedConstructionWaste,
       };
 
   @override
   Map<String, String> typeUnits(BuildContext context) => {
-        paperWasteKey: Translation.current.unitTons,
         cardboardWasteKey: Translation.current.unitTons,
         glassWasteKey: Translation.current.unitTons,
-        metalWasteKey: Translation.current.unitTons,
-        plasticWasteKey: Translation.current.unitTons,
+        plasticPETBottleWasteKey: Translation.current.unitTons,
+        otherPlasticWasteKey: Translation.current.unitTons,
         householdWasteKey: Translation.current.unitTons,
-        waterWasteKey: Translation.current.unitCubicMeter,
+        concreteWasteKey: Translation.current.unitTons,
+        otherMixedConstructionWasteKey: Translation.current.unitTons,
       };
 }
 
