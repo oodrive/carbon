@@ -47,7 +47,7 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "#FFFFFF"
-  image: "splash_beta.png"
+  image: "raw_graphics/splash_beta.png"
 
 flutter_gen:
   integrations:

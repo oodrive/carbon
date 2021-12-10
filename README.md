@@ -4,6 +4,8 @@ Ce projet permet à des organisations et sociétés d'estimer le bilan carbone d
 
 Il est directement exécutable en ligne [ici](https://oodrive.github.io/carbon/).
 
+![Screenshot](/raw_graphics/screenshot.png)
+
 Attention : cet outil est encore en cours de développement et comme les facteurs d'émission changent régulièrement il est possible que certaines valeurs ou résultats soient modifiés au fil des mises à jour.
 
 ## A qui s'addresse cet outil ?
