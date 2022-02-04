@@ -13,9 +13,9 @@ const RESOURCES = {
 "splash/img/dark-1x.png": "540d5276523240e4ae9ebc88c5a5c198",
 "splash/img/light-1x.png": "540d5276523240e4ae9ebc88c5a5c198",
 "splash/style.css": "d4198f3312b6f480da2da5610d5043e5",
-"index.html": "759445f6bc7342733ba85b7c332ea8a8",
-"/": "759445f6bc7342733ba85b7c332ea8a8",
-"main.dart.js": "1a4a8f30fcb635f62115fb9001149095",
+"index.html": "0a74075da58595bc90f4b49a275d042a",
+"/": "0a74075da58595bc90f4b49a275d042a",
+"main.dart.js": "b799e458893704dd5603c3919c995eaf",
 "favicon.png": "4398e9854604a76090445e03893615c9",
 "icons/Icon-192.png": "9b622b42c092dfb331f196d515ee7853",
 "icons/Icon-96.png": "bfc76d04e1e04001101eb0557048e09b",
@@ -23,7 +23,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "5dc18206f78699208725f217380f9417",
 "manifest.json": "471d902989b66d97e393603996d0387e",
 "assets/AssetManifest.json": "87225925321c1384f8310f71f843bdb0",
-"assets/NOTICES": "c91149966f200c260795a4d64b971675",
+"assets/NOTICES": "1f6ad372d772084fea4d4f333250007a",
 "assets/FontManifest.json": "5bdf83e11ba50eb32d6b48b990269481",
 "assets/fonts/VarelaRound-Regular.ttf": "159cb67fc3bc762a8c3232f0a0c6728e",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
@@ -33,10 +33,10 @@ const RESOURCES = {
 "assets/assets/dead_zones_4deg.webp": "4cd5e9bcf6f9766a3357d1a644052e91",
 "assets/assets/logo.svg": "7c829a2fbf02124849cf92a2fa167665",
 "assets/assets/scopes.webp": "98616ce3ebb21b1a60c618d6697cf859",
-"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
-"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
-"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
-"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498"
+"canvaskit/canvaskit.js": "62b9906717d7215a6ff4cc24efbd1b5c",
+"canvaskit/profiling/canvaskit.js": "3783918f48ef691e230156c251169480",
+"canvaskit/profiling/canvaskit.wasm": "6d1b0fc1ec88c3110db88caa3393c580",
+"canvaskit/canvaskit.wasm": "b179ba02b7a9f61ebc108f82c5a1ecdb"
 };
 
 // The application shell files that are downloaded before a service worker can
