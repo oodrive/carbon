@@ -13,9 +13,9 @@ const RESOURCES = {
 "splash/img/dark-1x.png": "540d5276523240e4ae9ebc88c5a5c198",
 "splash/img/light-1x.png": "540d5276523240e4ae9ebc88c5a5c198",
 "splash/style.css": "d4198f3312b6f480da2da5610d5043e5",
-"index.html": "0a74075da58595bc90f4b49a275d042a",
-"/": "0a74075da58595bc90f4b49a275d042a",
-"main.dart.js": "b799e458893704dd5603c3919c995eaf",
+"index.html": "2b8afc5b7aa51a6cbffc21b0ee537dac",
+"/": "2b8afc5b7aa51a6cbffc21b0ee537dac",
+"main.dart.js": "96b98a2095fdd8e845b71bc39be5bd23",
 "favicon.png": "4398e9854604a76090445e03893615c9",
 "icons/Icon-192.png": "9b622b42c092dfb331f196d515ee7853",
 "icons/Icon-96.png": "bfc76d04e1e04001101eb0557048e09b",
@@ -33,10 +33,10 @@ const RESOURCES = {
 "assets/assets/dead_zones_4deg.webp": "4cd5e9bcf6f9766a3357d1a644052e91",
 "assets/assets/logo.svg": "7c829a2fbf02124849cf92a2fa167665",
 "assets/assets/scopes.webp": "98616ce3ebb21b1a60c618d6697cf859",
-"canvaskit/canvaskit.js": "62b9906717d7215a6ff4cc24efbd1b5c",
-"canvaskit/profiling/canvaskit.js": "3783918f48ef691e230156c251169480",
-"canvaskit/profiling/canvaskit.wasm": "6d1b0fc1ec88c3110db88caa3393c580",
-"canvaskit/canvaskit.wasm": "b179ba02b7a9f61ebc108f82c5a1ecdb"
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
 };
 
 // The application shell files that are downloaded before a service worker can
