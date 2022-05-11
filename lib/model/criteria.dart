@@ -1,8 +1,7 @@
+import 'package:carbon/model/co2_factors.g.dart';
+import 'package:carbon/model/organization.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:flutter/widgets.dart';
-
-import 'co2_factors.g.dart';
-import 'organization.dart';
 
 extension Co2FactorExtension on Co2Factor {
   Co2Factor divideBy(double number) => Co2Factor(factor / number, source);

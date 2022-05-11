@@ -1,10 +1,9 @@
+import 'package:carbon/common/carbon_pie_chart.dart';
+import 'package:carbon/common/extensions.dart';
 import 'package:carbon/gen/colors.gen.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
-import 'carbon_pie_chart.dart';
-import 'extensions.dart';
 
 class MiniScopesPieChart extends StatelessWidget {
   const MiniScopesPieChart({
@@ -127,7 +126,9 @@ class _PieIndicator extends StatelessWidget {
     Key? key,
     required this.color,
     required this.text,
+    // ignore: unused_element
     this.size = 16,
+    // ignore: unused_element
     this.textColor = Colors.black87,
   }) : super(key: key);
 

@@ -1,12 +1,11 @@
 import 'dart:math';
 
+import 'package:carbon/model/criteria.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hive/hive.dart';
 import 'package:json_annotation/json_annotation.dart';
-
-import 'criteria.dart';
 
 part 'organization.g.dart';
 

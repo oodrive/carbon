@@ -1,17 +1,16 @@
 import 'package:beamer/beamer.dart';
+import 'package:carbon/gen/colors.gen.dart';
+import 'package:carbon/gen/fonts.gen.dart';
+import 'package:carbon/home_screen.dart';
+import 'package:carbon/model/organization.dart';
+import 'package:carbon/organization_screen.dart';
+import 'package:carbon/scope_screen.dart';
+import 'package:carbon/site_screen.dart';
+import 'package:carbon/translations/gen/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
-
-import 'gen/colors.gen.dart';
-import 'gen/fonts.gen.dart';
-import 'home_screen.dart';
-import 'model/organization.dart';
-import 'organization_screen.dart';
-import 'scope_screen.dart';
-import 'site_screen.dart';
-import 'translations/gen/l10n.dart';
 
 const _appName = 'oodrive_carbon';
 

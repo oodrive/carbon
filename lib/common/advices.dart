@@ -1,3 +1,4 @@
+import 'package:carbon/common/extensions.dart';
 import 'package:carbon/common/widgets.dart';
 import 'package:carbon/gen/colors.gen.dart';
 import 'package:carbon/model/criteria.dart';
@@ -6,8 +7,6 @@ import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
-import 'extensions.dart';
 
 class _CriteriaInfo {
   const _CriteriaInfo(this.tCO2e, this.criteria, this.scopeIdx);

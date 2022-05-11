@@ -1,4 +1,9 @@
 import 'package:beamer/beamer.dart';
+import 'package:carbon/common/extensions.dart';
+import 'package:carbon/common/widgets.dart';
+import 'package:carbon/gen/colors.gen.dart';
+import 'package:carbon/model/criteria.dart';
+import 'package:carbon/model/organization.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
@@ -6,12 +11,6 @@ import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 import 'package:provider/provider.dart';
 import 'package:search_choices/search_choices.dart';
-
-import 'common/extensions.dart';
-import 'common/widgets.dart';
-import 'gen/colors.gen.dart';
-import 'model/criteria.dart';
-import 'model/organization.dart';
 
 class ScopeScreen extends StatelessWidget {
   const ScopeScreen();

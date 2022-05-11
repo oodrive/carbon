@@ -1,16 +1,15 @@
 import 'package:beamer/beamer.dart';
+import 'package:carbon/common/advices.dart';
+import 'package:carbon/common/extensions.dart';
+import 'package:carbon/common/scope_pie_chart.dart';
+import 'package:carbon/common/widgets.dart';
+import 'package:carbon/gen/assets.gen.dart';
+import 'package:carbon/model/organization.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:provider/provider.dart';
-
-import 'common/advices.dart';
-import 'common/extensions.dart';
-import 'common/scope_pie_chart.dart';
-import 'common/widgets.dart';
-import 'gen/assets.gen.dart';
-import 'model/organization.dart';
 
 class OrganizationScreen extends StatelessWidget {
   const OrganizationScreen();

@@ -4,11 +4,10 @@
 
 import 'dart:math' as math;
 
+import 'package:carbon/common/extensions.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
-
-import 'extensions.dart';
 
 /// A colored piece of the [CarbonPieChart].
 class CarbonPieChartSegment {

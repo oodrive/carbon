@@ -2,6 +2,12 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:beamer/beamer.dart';
+import 'package:carbon/common/extensions.dart';
+import 'package:carbon/common/scope_pie_chart.dart';
+import 'package:carbon/common/widgets.dart';
+import 'package:carbon/gen/assets.gen.dart';
+import 'package:carbon/gen/colors.gen.dart';
+import 'package:carbon/model/organization.dart';
 import 'package:carbon/translations/gen/l10n.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:file_saver/file_saver.dart';
@@ -10,13 +16,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:gap/gap.dart';
 import 'package:provider/provider.dart';
-
-import 'common/extensions.dart';
-import 'common/scope_pie_chart.dart';
-import 'common/widgets.dart';
-import 'gen/assets.gen.dart';
-import 'gen/colors.gen.dart';
-import 'model/organization.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen();
@@ -183,6 +182,7 @@ class _HomeMenuButton extends StatelessWidget {
 
             // Check if user didn't canceled the picker
             if (result != null) {
+              // ignore: use_build_context_synchronously
               final state = context.read<OrganizationsState>();
 
               try {
@@ -195,6 +195,7 @@ class _HomeMenuButton extends StatelessWidget {
                   backgroundColor: ColorName.lightGreen,
                   content: Text(Translation.current.exportDataError),
                 );
+                // ignore: use_build_context_synchronously
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }
             }
